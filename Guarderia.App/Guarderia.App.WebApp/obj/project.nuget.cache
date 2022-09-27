@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "DZsuTZOgwx3oSzGFB32AVDg/sN2k6z6s1ozMydqBYeDQmZ8SFQwNqBHhrWa6cwi85td9S50V8hyRQxNxvaV7ew==",
+  "success": true,
+  "projectFilePath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.WebApp\\Guarderia.App.WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Freddy López\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Freddy López\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Freddy López\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Freddy López\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
