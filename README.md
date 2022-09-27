@@ -1,2 +1,3 @@
 # Guarderia
-Proyecto desarrollado en C# para hacer entrega del hijo en la guardería y el padre sabe que su hijo esta en el colegio
+Este proyecto está hecho en esta tecnología, se utilizaron estos elementos desarrollados en C#, JS, HTML, funciona para llevar un control en las guarderías o colegios de preescolar, con el fin de validar que se hace la entrega del hijo en la guardería y el padre sabe que su hijo está en el colegio y así podrá estar seguro a qué hora entra y sale cuando lo entrega un acudiente a la institución. El objetivo es que una vez se reciba el estudiante e ingresado los datos en la institución le llegue al padre de familia que su hijo ya se encuentra en dicha institución mostrando datos de entrada de la persona quien lo entrega y profesor que lo recibe igualmente a la hora en que sale.
+Nos ayudara a tener un control mas exacto de los estudiantes que asisten a clases.
