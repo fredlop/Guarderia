@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using MatriculaOnline.App.Dominio.Entidades;
-using MatriculaOnline.App.Persistencia.Model;
+using Guarderia.App.Dominio.Entidades;
+using Guarderia.App.Persistencia.Model;
 
-namespace MatriculaOnline.App.Persistencia.AppRepositorios
+namespace Guarderia.App.Persistencia.AppRepositorios
 {
     public class RepositorioEstudiante : IRepositorioEstudiante
     {
-        private readonly MatriculasDbContext _matriculasContext;
+        private readonly GuarderiaDbContext _guarderiaContext;
 
-        public RepositorioEstudiante(MatriculasDbContext matriculasContext)
+        public RepositorioEstudiante(GuarderiaDbContext guarderiaContext)
         {
             _matriculasContext = matriculasContext;
         }

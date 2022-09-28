@@ -1,9 +1,9 @@
-﻿using MatriculaOnline.App.Dominio.Entidades;
+﻿using Guarderia.App.Dominio.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MatriculaOnline.App.Persistencia.AppRepositorios
+namespace Guarderia.App.Persistencia.AppRepositorios
 {
     public interface IRepositorioGrado
     {
@@ -13,8 +13,8 @@ namespace MatriculaOnline.App.Persistencia.AppRepositorios
 
         Grado UpdateGrado(Grado grado);
 
-        Grado GetGrado(int idGrado);
+        Grado GetGrado(int id);
 
-        bool DeleteGrado(int idGrado);
+        bool DeleteGrado(int id);
     }
 }
