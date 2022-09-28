@@ -1,0 +1,85 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Administrativo.GestionDeMatriculas.IndexModel
+@{
+}
+
+<div class="card shadow mb-4">
+
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Busque las matriculas por nombre de alumno</h6>
+    </div>
+    <div class="card-body">
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="NombreABuscar">Nombre</label>
+            <input type="text" asp-for="NombreABuscar" class="form-control" />
+            <span asp-validation-for="NombreABuscar" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
+    </div>
+
+</div>
+@{
+    if (Model.matriculasList.Count() > 0) 
+    {
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Listado de materias disponibles</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre Alumno</th>
+                                <th>Grado</th>
+                                <th>Año</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                        </tfoot>
+                        <tbody>
+                            @foreach (var item in Model.matriculasList)
+                            {
+                                <tr>
+                                    <td>@item.IdMatricula</td>
+                                    <td>@item.Estudiante.Nombre @item.Estudiante.Apellido  </td>
+                                    <td>@item.Grado.NombreGrado </td>
+                                    <td>@item.Year.NombreYear</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-icon-split" asp-page="Edit" asp-route-id="@item.IdGrado">
+                                            <span class="text">Editar</span>
+                                        </a>
+                                        <a class="btn btn-danger btn-icon-split" asp-page="Delete" asp-route-id="@item.IdGrado">
+                                            <span class="text">Eliminar</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+    }
+}
+
+<div class="container">
+    <div class="col-md-12 bg-light text-right">
+        <p>
+            <a class="btn btn-primary btn-icon-split" asp-page="Create">
+                <span class="text">Crear Matricula</span>
+            </a>
+        </p>
+    </div>
+</div>

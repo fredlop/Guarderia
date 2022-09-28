@@ -1,0 +1,119 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Administrativo.Usuarios.IndexModel
+@{
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Modulo de Administracion de usuarios</h1>
+    <p class="mb-4">
+        Pagina de adiministracion de Usuarios.
+    </p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de estudiantes en la applicacion</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Tipo De Identificacion</th>
+                            <th>Numero De Identificacion</th>
+                            <th>Genero</th>
+                            <th>Codigo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model.Estudiantes)
+                        {
+                            <tr>
+                                <td>@item.Nombre</td>
+                                <td>@item.Apellido</td>
+                                <td>@item.TiposIdentificacion.NombreIdentificacion</td>
+                                <td>@item.NumeroDeIdentificacion</td>
+                                <td>@item.Genero.NombreGenero</td>
+                                <td>@item.Codigo</td>
+                                <td>
+                                    <a class="btn btn-primary btn-icon-split" asp-page="EditarEstudiante" asp-route-id="@item.IdEstudiante">
+                                        <span class="text">Editar</span>
+                                    </a>
+                                    <a class="btn btn-danger btn-icon-split" asp-page="EliminarEstudiante" asp-route-id="@item.IdEstudiante">
+                                        <span class="text">Eliminar</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Listado de profesores en la applicacion</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Tipo De Identificacion</th>
+                                <th>Numero De Identificacion</th>
+                                <th>Genero</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                        </tfoot>
+                        <tbody>
+                            @foreach (var item in Model.Profesores)
+                            {
+                                <tr>
+                                    <td>@item.Nombre</td>
+                                    <td>@item.Apellido</td>
+                                    <td>@item.TiposIdentificacion.NombreIdentificacion</td>
+                                    <td>@item.NumeroDeIdentificacion</td>
+                                    <td>@item.Genero.NombreGenero</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-icon-split" asp-page="EditarProfesor" asp-route-id="@item.IdProfesor">
+                                            <span class="text">Editar</span>
+                                        </a>
+                                        <a class="btn btn-danger btn-icon-split" asp-page="EliminarProfesor" asp-route-id="@item.IdProfesor">
+                                            <span class="text">Eliminar</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger">
+            </div>
+            <div class="container">
+                <div>
+                    <p>
+                        <a class="btn btn-primary btn-icon-split" asp-page="Registro">
+                            <span class="text">Crear Usuario</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

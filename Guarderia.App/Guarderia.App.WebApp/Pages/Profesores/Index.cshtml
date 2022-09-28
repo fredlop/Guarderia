@@ -1,0 +1,98 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Profesores.IndexModel
+@{
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Bienvenido Profesor</h1>
+    <p class="mb-4">
+        Aqui puede consultar su informacion
+    </p>
+
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Nombre Completo</p>
+                    </div>
+                    <div class="col-sm-9">
+                            <p class="text-muted mb-0"> @Model.Model.Nombre @Model.Model.Apellido </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Tipo de Identificacion</p>
+                    </div>
+                    <div class="col-sm-9">
+                            <p class="text-muted mb-0"> @Model.Model.TiposIdentificacion.NombreIdentificacion</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Numero</p>
+                    </div>
+                    <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Model.NumeroDeIdentificacion</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Genero</p>
+                    </div>
+                    <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Model.Genero.NombreGenero</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de materias disponibles</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Profesor</th>
+                            <th>Grado</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model.Model.Materias)
+                        {
+                            <tr>
+                                <td>@item.IdMateria</td>
+                                <td>@item.NombreMateria</td>
+                                <td>@item.Profesor.Nombre  @item.Profesor.Apellido </td>
+                                <td>@item.Grado.NombreGrado</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

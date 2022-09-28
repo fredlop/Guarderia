@@ -1,0 +1,25 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.LoginModel
+@{
+}
+<div>
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Email">Email</label>
+            <input type="text" asp-for="Model.Email" class="form-control" />
+            <span asp-validation-for="Model.Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Password">Password</label>
+            <input type="password" asp-for="Model.Password" class="form-control" />
+            <span asp-validation-for="Model.Password" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </div>
+    </form>
+</div>

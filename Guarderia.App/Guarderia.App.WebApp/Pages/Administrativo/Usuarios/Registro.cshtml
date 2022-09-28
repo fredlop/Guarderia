@@ -1,0 +1,110 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Administrativo.Usuarios.RegistroModel
+@{
+}
+<div>
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Email">Email</label>
+            <input type="text" asp-for="Model.Email" class="form-control" />
+            <span asp-validation-for="Model.Email"class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Password">Password</label>
+            <input type="password" asp-for="Model.Password" class="form-control" />
+            <span asp-validation-for="Model.Password" class="text-danger"></span>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label" asp-for="Model.ConfirmPassword">Confirme el Password</label>
+            <input type="password" asp-for="Model.ConfirmPassword" class="form-control" />
+            <span asp-validation-for="Model.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" >Seleccione el Rol</label>
+            @if (Model.allRoles.Count() > 0)
+            {
+                <select class="form-control" name="rol" id="rol">
+                    @foreach (var item in Model.allRoles)
+                    {
+                        <option value="@item.NormalizedName" id="select-@item.Id">@Html.DisplayFor(m=> item.NormalizedName)</option>
+                    }
+                </select>
+            }
+            else
+            {
+                <p> No existen roles en la db </p>
+            }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Nombre">Nombre</label>
+            <input type="text" asp-for="Model.Nombre" class="form-control" />
+            <span asp-validation-for="Model.Nombre" class="text-danger"></span>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Apellido">Apellido</label>
+            <input type="text" asp-for="Model.Apellido" class="form-control" />
+            <span asp-validation-for="Model.Apellido" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Seleccione el Genero</label>
+            @if (Model.Generos.Count() > 0)
+            {
+                <select class="form-control" name="genero" id="genero">
+                    @foreach (var item in Model.Generos)
+                    {
+                        <option value="@item.IdGenero" id="select-@item.IdGenero">@Html.DisplayFor(m=> item.NombreGenero)</option>
+                    }
+                </select>
+            }
+            else
+            {
+                <p> No existen generos en la db </p>
+            }
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label">Seleccione el tipo de identificacion</label>
+            @if (Model.TiposIdentificacion.Count() > 0)
+            {
+                <select class="form-control" name="tiposidentificacion" id="tiposidentificacion">
+                    @foreach (var item in Model.TiposIdentificacion)
+                    {
+                        <option value="@item.IdIdentificacion" id="select-@item.IdIdentificacion">@Html.DisplayFor(m=> item.NombreIdentificacion)</option>
+                    }
+                </select>
+            }
+            else
+            {
+                <p> No existen tipo de identificacion en la db </p>
+            }
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label" asp-for="Model.NumeroDeIdentificacion">NumeroDeIdentificacion</label>
+            <input type="text" asp-for="Model.NumeroDeIdentificacion" class="form-control" />
+            <span asp-validation-for="Model.NumeroDeIdentificacion" class="text-danger"></span>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Model.Codigo">Codigo</label>
+            <input type="text" asp-for="Model.Codigo" class="form-control" />
+            <span asp-validation-for="Model.Codigo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+    </form>
+</div>

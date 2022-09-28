@@ -1,0 +1,9 @@
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.csproj.AssemblyReference.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.AssemblyInfoInputs.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.AssemblyInfo.cs
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.csproj.CoreCompileInputs.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.RazorAssemblyInfo.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.WebApp\obj\Debug\netcoreapp3.1\Guarderia.App.WebApp.RazorAssemblyInfo.cs

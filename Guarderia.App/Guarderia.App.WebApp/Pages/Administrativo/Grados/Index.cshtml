@@ -1,0 +1,69 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Administrativo.Grados.GradoModel
+@{
+    ViewData["Title"] = "Administracion de Grados";
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Modulo de Administracion de grados</h1>
+    <p class="mb-4">
+       Pagina de adiministracion de Grados.
+    </p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de grados disponibles</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model.Grados)
+                        {
+                            <tr>
+                                <td>@item.IdGrado</td>
+                                <td>@item.NombreGrado</td>
+                                <td>
+                                    <a class="btn btn-primary btn-icon-split" asp-page="Edit"  asp-route-id="@item.IdGrado">
+                                        <span class="text">Editar</span>
+                                    </a>
+                                    <a class="btn btn-danger btn-icon-split" asp-page="Delete" asp-route-id="@item.IdGrado">
+                                        <span class="text">Eliminar</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger">
+            </div>
+            <div class="container">
+                <div>
+                    <p>
+                        <a class="btn btn-primary btn-icon-split" asp-page="Create">
+                            <span class="text">Crear Grado</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>

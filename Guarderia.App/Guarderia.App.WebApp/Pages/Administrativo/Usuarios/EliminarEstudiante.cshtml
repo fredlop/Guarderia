@@ -1,0 +1,19 @@
+﻿@page
+@model Matriculas.App.WebApp.Pages.Administrativo.Usuarios.EliminarEstudianteModel
+@{
+}
+<p class="mb-4">
+    Esta seguro de eliminar el registro.
+</p>
+<div>
+    <form method="post">
+        <input type="hidden" asp-for="dataEstudiante.IdEstudiante" />
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+        <input type="text" asp-for="dataEstudiante.Nombre" class="form-control" disabled />
+        <input type="text" asp-for="dataEstudiante.Apellido" class="form-control" disabled />
+        <br />
+        <button class="btn btn-primary" asp-page-handler="Delete">Si</button>
+        <button class="btn btn-light" asp-page-handler="NoDelete">No</button>
+    </form>
+</div>
