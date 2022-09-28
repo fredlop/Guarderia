@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace MatriculaOnline.App.Dominio.Entidades
+namespace Guarderia.App.Dominio.Entidades
 {
     public class  Login
     {

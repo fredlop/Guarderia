@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bdZk9qaQjxSAOwzf3XrbQ856+Bi3XgXhmzm9RnBCTe1Ip9J6WmjqONuGDtN3OYzCfA5dk9fGQ17uuBCq2Oizrg==",
+  "dgSpecHash": "SYlal9KNznFWL4RV2R0QqsvIVwhYsfCx92qWfICyyPuNMQacxKMKARrOD6FtSP+Zhz/k7pheSmIAVxZmlM7sIA==",
   "success": true,
-  "projectFilePath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Persistencia\\MatriculaOnline.App.Persistencia.csproj",
+  "projectFilePath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.Persistencia\\Guarderia.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Freddy López\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
@@ -105,10 +105,7 @@
     "C:\\Users\\Freddy López\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Freddy López\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Freddy López\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\Freddy López\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

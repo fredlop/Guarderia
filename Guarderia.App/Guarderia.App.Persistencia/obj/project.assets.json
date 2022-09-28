@@ -1847,16 +1847,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "MatriculaOnline.App.Dominio/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/MatriculaOnline.App.Dominio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MatriculaOnline.App.Dominio.dll": {}
-        }
       }
     }
   },
@@ -6218,16 +6208,10 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "MatriculaOnline.App.Dominio/1.0.0": {
-      "type": "project",
-      "path": "../MatriculaOnline.App.Dominio/MatriculaOnline.App.Dominio.csproj",
-      "msbuildProject": "../MatriculaOnline.App.Dominio/MatriculaOnline.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MatriculaOnline.App.Dominio >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
@@ -6241,11 +6225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Persistencia\\MatriculaOnline.App.Persistencia.csproj",
-      "projectName": "MatriculaOnline.App.Persistencia",
-      "projectPath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Persistencia\\MatriculaOnline.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.Persistencia\\Guarderia.App.Persistencia.csproj",
+      "projectName": "Guarderia.App.Persistencia",
+      "projectPath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.Persistencia\\Guarderia.App.Persistencia.csproj",
       "packagesPath": "C:\\Users\\Freddy López\\.nuget\\packages\\",
-      "outputPath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Persistencia\\obj\\",
+      "outputPath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Freddy López\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6259,11 +6243,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Dominio\\MatriculaOnline.App.Dominio.csproj": {
-              "projectPath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Dominio\\MatriculaOnline.App.Dominio.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -6312,20 +6292,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

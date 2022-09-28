@@ -1,0 +1,5 @@
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.Persistencia\obj\Debug\netcoreapp3.1\Guarderia.App.Persistencia.csproj.AssemblyReference.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.Persistencia\obj\Debug\netcoreapp3.1\Guarderia.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.Persistencia\obj\Debug\netcoreapp3.1\Guarderia.App.Persistencia.AssemblyInfoInputs.cache
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.Persistencia\obj\Debug\netcoreapp3.1\Guarderia.App.Persistencia.AssemblyInfo.cs
+C:\FreddyLopez\Estudios\Mintic\ProyectDevelopment\GitHub\Proyecto\Guarderia\Guarderia\Guarderia.App\Guarderia.App.Persistencia\obj\Debug\netcoreapp3.1\Guarderia.App.Persistencia.csproj.CoreCompileInputs.cache

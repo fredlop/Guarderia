@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B34yxdy9nHO7gK0NRjlaFJrP/+atv3q3ZSzICXPjWJIP7mvx1CJgu3rvnixd9FKtFv/eE+gWJAZAJkd724oGcQ==",
+  "dgSpecHash": "ZgHjYFUpM4HC21faJNy+Sk7iZ4ppWGomQQ+YHg8kwQTkJKueiUPSVbuvv+irA0ONKoZXr7uXqEg5vu9bD6I4lg==",
   "success": true,
-  "projectFilePath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\MatriculaOnline\\Matriculas.App\\MatriculaOnline.App.Dominio\\MatriculaOnline.App.Dominio.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Freddy López\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\FreddyLopez\\Estudios\\Mintic\\ProyectDevelopment\\GitHub\\Proyecto\\Guarderia\\Guarderia\\Guarderia.App\\Guarderia.App.Dominio\\Guarderia.App.Dominio.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

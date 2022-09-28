@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace MatriculaOnline.App.Dominio.Entidades
+namespace Guarderia.App.Dominio.Entidades
 {
     public class Registro
     {
@@ -24,17 +24,6 @@ namespace MatriculaOnline.App.Dominio.Entidades
         public string Nombre { get; set; }
         [Required]
         public string Apellido { get; set; }
-
-        [Required]
-        public int IdGenero { get; set; }
-
-        [Required]
-        public int IdTipoIdeIdentificacion { get; set; }
-
-        [Required]
-        public string NumeroDeIdentificacion{ get; set; }
-
-        [Required]
-        public string Codigo { get; set; }
+        
     }
 }

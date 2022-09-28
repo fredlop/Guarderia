@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MatriculaOnline.App.Dominio")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Guarderia.App.Persistencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("MatriculaOnline.App.Dominio")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MatriculaOnline.App.Dominio")]
+[assembly: System.Reflection.AssemblyProductAttribute("Guarderia.App.Persistencia")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Guarderia.App.Persistencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
