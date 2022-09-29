@@ -59,17 +59,21 @@ namespace Guarderia.App.Persistencia.Migrations
                 });
 
             
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Grado", b =>
+            modelBuilder.Entity("Guarderia.App.Dominio.Entidades.Grado", b =>
                 {
-                    b.Property<int>("IdGrado")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("NombreGrado")
+                    b.Property<string>("Profesor")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdGrado");
+                    b.Property<string>("Alumnos")
+                        .HasColumnType("nvarchar(max)");
+
+
+                    b.HasKey("Id");
 
                     b.ToTable("Grados");
 
@@ -77,153 +81,55 @@ namespace Guarderia.App.Persistencia.Migrations
                         new
                         {
                             IdGrado = 1,
-                            NombreGrado = "Primero de primaria"
+                            NombreGrado = "Pre-Jarjin"
                         },
                         new
                         {
                             IdGrado = 2,
-                            NombreGrado = "Segundo de de primaria"
+                            NombreGrado = "Jardin"
                         },
                         new
                         {
                             IdGrado = 3,
-                            NombreGrado = "Tercero de de primaria"
-                        },
-                        new
-                        {
-                            IdGrado = 4,
-                            NombreGrado = "Cuarto de de primaria"
-                        },
-                        new
-                        {
-                            IdGrado = 5,
-                            NombreGrado = "Quinto de de primaria"
+                            NombreGrado = "Transicion"
+                        
                         });
                 });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Materia", b =>
+            
+            modelBuilder.Entity("Guarderia.App.Dominio.Entidades.Persona", b =>
                 {
-                    b.Property<int>("IdMateria")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
-
-                    b.Property<int>("IdGrado")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdProfesor")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NombreMateria")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdMateria");
-
-                    b.HasIndex("IdGrado");
-
-                    b.HasIndex("IdProfesor");
-
-                    b.ToTable("Materias");
-                });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Profesor", b =>
-                {
-                    b.Property<int>("IdProfesor")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Apellido")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("IdGenero")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("IdTipoIdeIdentificacion")
-                        .HasColumnType("int");
-
-                    b.Property<string>("IdUsuario")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NumeroDeIdentificacion")
+                    b.Property<int?>("Apellido")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdProfesor");
-
-                    b.HasIndex("IdGenero");
-
-                    b.HasIndex("IdTipoIdeIdentificacion");
-
-                    b.ToTable("Profesores");
-                });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.TiposIdentificacion", b =>
-                {
-                    b.Property<int>("IdIdentificacion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("NombreIdentificacion")
+                    b.Property<int?>("Cedula")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdIdentificacion");
-
-                    b.ToTable("TiposDeIdentificacion");
-
-                    b.HasData(
-                        new
-                        {
-                            IdIdentificacion = 1,
-                            NombreIdentificacion = "Tarjeta de Identidad"
-                        },
-                        new
-                        {
-                            IdIdentificacion = 2,
-                            NombreIdentificacion = "Cedula"
-                        },
-                        new
-                        {
-                            IdIdentificacion = 3,
-                            NombreIdentificacion = "Pasaporte"
-                        },
-                        new
-                        {
-                            IdIdentificacion = 4,
-                            NombreIdentificacion = "Cedula de extranjeria"
-                        });
-                });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Year", b =>
-                {
-                    b.Property<int>("IdYear")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("NombreYear")
+                    b.Property<string>("Numero_telefono")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdYear");
+                    b.Property<string>("Correo")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("Years");
+                    b.Property<string>("Id_grado")
+                        .HasColumnType("int");
 
-                    b.HasData(
-                        new
-                        {
-                            IdYear = 1,
-                            NombreYear = "2022"
-                        },
-                        new
-                        {
-                            IdYear = 2,
-                            NombreYear = "2023"
-                        });
+                    b.HasKey("IdPersona");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("Id_grado");
+
+                    b.ToTable("Personas");
                 });
-
+            
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -420,55 +326,21 @@ namespace Guarderia.App.Persistencia.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Estudiante", b =>
+            modelBuilder.Entity("Guarderia.App.Dominio.Entidades.Alumno", b =>
                 {
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.Genero", "Genero")
+                    b.HasOne("Guarderia.App.Dominio.Entidades.Grado", "Grado")
                         .WithMany()
-                        .HasForeignKey("IdGenero");
+                        .HasForeignKey("Id");
 
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.TiposIdentificacion", "TiposIdentificacion")
+                    b.HasOne("Guarderia.App.Dominio.Entidades.Persona", "Persona")
                         .WithMany()
-                        .HasForeignKey("IdTipoIdeIdentificacion");
-
-                    b.Navigation("Genero");
-
-                    b.Navigation("TiposIdentificacion");
-                });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Materia", b =>
-                {
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.Grado", "Grado")
-                        .WithMany()
-                        .HasForeignKey("IdGrado")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.Profesor", "Profesor")
-                        .WithMany()
-                        .HasForeignKey("IdProfesor")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Id");
 
                     b.Navigation("Grado");
 
-                    b.Navigation("Profesor");
+                    b.Navigation("Persona");
                 });
-
-            modelBuilder.Entity("MatriculaOnline.App.Dominio.Entidades.Profesor", b =>
-                {
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.Genero", "Genero")
-                        .WithMany()
-                        .HasForeignKey("IdGenero");
-
-                    b.HasOne("MatriculaOnline.App.Dominio.Entidades.TiposIdentificacion", "TiposIdentificacion")
-                        .WithMany()
-                        .HasForeignKey("IdTipoIdeIdentificacion");
-
-                    b.Navigation("Genero");
-
-                    b.Navigation("TiposIdentificacion");
-                });
-
+            
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
