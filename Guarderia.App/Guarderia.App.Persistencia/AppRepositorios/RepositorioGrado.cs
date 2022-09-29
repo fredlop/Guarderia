@@ -1,38 +1,38 @@
-﻿using MatriculaOnline.App.Dominio.Entidades;
-using MatriculaOnline.App.Persistencia.Model;
+﻿using Guarderia.App.Dominio.Entidades;
+using Guarderia.App.Persistencia.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace MatriculaOnline.App.Persistencia.AppRepositorios
+namespace Guarderia.App.Persistencia.AppRepositorios
 {
     public class RepositorioGrado : IRepositorioGrado
     {
-        private readonly MatriculasDbContext _matriculaContext;
+        private readonly GuarderiasDbContext _guarderiaContext;
 
-        public RepositorioGrado(MatriculasDbContext matriculaContext)
+        public RepositorioGrado(GuarderiasDbContext guarderiaContext)
         {
-            _matriculaContext = matriculaContext;
+            _guarderiaContext = guaredriaContext;
         }
 
         Grado IRepositorioGrado.AddGrado(Grado grado)
         {
-            var gradoAdicionado = _matriculaContext.Grados.Add(grado);
-            _matriculaContext.SaveChanges();
+            var gradoAdicionado = _guarderiaContext.Grados.Add(grado);
+            _guarderiaContext.SaveChanges();
             return gradoAdicionado.Entity;
         }
 
-        bool IRepositorioGrado.DeleteGrado(int idGrado)
+        bool IRepositorioGrado.DeleteGrado(int id)
         {
             bool result = false;
             try
             {
-                var gradoEncontrado = _matriculaContext.Grados.FirstOrDefault(g => g.IdGrado == idGrado);
+                var gradoEncontrado = _guarderiaContext.Grados.FirstOrDefault(g => g.Id == id);
                 if (gradoEncontrado == null)
                     return result;
-                _matriculaContext.Grados.Remove(gradoEncontrado);
-                _matriculaContext.SaveChanges();
+                _guarderiaContext.Grados.Remove(gradoEncontrado);
+                _guarderiaContext.SaveChanges();
 
                 result = true;
             }
@@ -45,21 +45,21 @@ namespace MatriculaOnline.App.Persistencia.AppRepositorios
 
         IEnumerable<Grado> IRepositorioGrado.GetAllGrados()
         {
-            return _matriculaContext.Grados;
+            return _guarderiaContext.Grados;
         }
 
         Grado IRepositorioGrado.GetGrado(int idGrado)
         {
-            return _matriculaContext.Grados.FirstOrDefault(g => g.IdGrado == idGrado);
+            return _guarderiaContext.Grados.FirstOrDefault(g => g.Id == id);
         }
 
         Grado IRepositorioGrado.UpdateGrado(Grado grado)
         {
-            var gradoEncontrado = _matriculaContext.Grados.FirstOrDefault(g => g.IdGrado == grado.IdGrado);
+            var gradoEncontrado = _guarderiaContext.Grados.FirstOrDefault(g => g.Id == grado.Id);
             if (gradoEncontrado != null)
             {
                 gradoEncontrado.NombreGrado = grado.NombreGrado;
-                _matriculaContext.SaveChanges();
+                _guarderiaContext.SaveChanges();
             }
             return gradoEncontrado;
         }

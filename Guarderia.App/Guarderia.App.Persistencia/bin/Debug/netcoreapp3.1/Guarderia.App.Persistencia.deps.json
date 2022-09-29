@@ -6,9 +6,9 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "MatriculaOnline.App.Persistencia/1.0.0": {
+      "Guarderia.App.Persistencia/1.0.0": {
         "dependencies": {
-          "MatriculaOnline.App.Dominio": "1.0.0",
+          "Guarderia.App.Dominio": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
@@ -16,7 +16,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0"
         },
         "runtime": {
-          "MatriculaOnline.App.Persistencia.dll": {}
+          "Guarderia.App.Persistencia.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {

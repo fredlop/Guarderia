@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MatriculaOnline.App.Persistencia.Migrations
+namespace Guarderia.App.Persistencia.Migrations
 {
     public partial class AddAuth : Migration
     {

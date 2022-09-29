@@ -1,20 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MatriculaOnline.App.Persistencia.Migrations
+namespace Guarderia.App.Persistencia.Migrations
 {
     public partial class TablaGrados : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Apellido",
-                table: "Estudiantes",
+                name: "Profesor",
+                table: "Alumnos",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Nombre",
-                table: "Estudiantes",
+                name: "Alumnos",
+                table: "Alumnos",
                 type: "nvarchar(max)",
                 nullable: true);
 
@@ -28,7 +28,7 @@ namespace MatriculaOnline.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Grados", x => x.IdGrado);
+                    table.PrimaryKey("PK_Grados", x => x.Id);
                 });
         }
 
@@ -38,12 +38,12 @@ namespace MatriculaOnline.App.Persistencia.Migrations
                 name: "Grados");
 
             migrationBuilder.DropColumn(
-                name: "Apellido",
-                table: "Estudiantes");
+                name: "Profesor",
+                table: "Alumnos");
 
             migrationBuilder.DropColumn(
-                name: "Nombre",
-                table: "Estudiantes");
+                name: "Alumnos",
+                table: "Alumnos");
         }
     }
 }

@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MatriculaOnline.App.Persistencia.Migrations
+namespace Guarderia.App.Persistencia.Migrations
 {
-    public partial class RegistrodeEstrudiantes : Migration
+    public partial class RegistrodeAlumnos : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "IdUsuario",
-                table: "Estudiantes",
+                name: "Id",
+                table: "Alumnos",
                 type: "nvarchar(max)",
                 nullable: true,
                 oldClrType: typeof(int),
@@ -19,8 +19,8 @@ namespace MatriculaOnline.App.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<int>(
-                name: "IdUsuario",
-                table: "Estudiantes",
+                name: "Id",
+                table: "Alumnos",
                 type: "int",
                 nullable: true,
                 oldClrType: typeof(string),
